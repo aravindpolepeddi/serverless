@@ -1,0 +1,22 @@
+{
+  "name": "serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aravindpolepeddi/serverless.git"
+  },
+  "author": "ara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aravindpolepeddi/serverless/issues"
+  },
+  "homepage": "https://github.com/aravindpolepeddi/serverless#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
