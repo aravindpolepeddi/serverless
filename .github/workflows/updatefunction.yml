@@ -1,3 +1,9 @@
+name: "Update lambda function"
+
+on: 
+  push: 
+    branches: 
+      - main
 jobs: 
   build: 
     name: "update lambda function"
@@ -32,8 +38,3 @@ jobs:
         name: "Update Lambda function"
         run: |-
             aws lambda update-function-code --function-name  csye6225-lambda-function --s3-bucket lambda.demo.polepeddiaravind.me --s3-key serverless.zip
-name: "Update lambda function"
-true: 
-  push: 
-    branches: 
-      - main
