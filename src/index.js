@@ -53,7 +53,7 @@ async function getItem(username) {
 const data = await getItem(username);
      if (Object.keys(data).length === 0){
         saveMailLog(username);
-            const verificationLink = "http://"+domainName+"/v1/verifyUserEmail?email="+username+"&token="+token+"";
+            const verificationLink = "https://"+domainName+"/v1/verifyUserEmail?email="+username+"&token="+token+"";
 console.log("in unverified part");
             const params = {
                 Destination: {
