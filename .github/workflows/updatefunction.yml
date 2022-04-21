@@ -29,11 +29,12 @@ jobs:
             mkdir serverless
             zip -r serverless.zip . -x ".git/*" ".github/*" "node_modules/*" "package-lock.json" "packer/*"
             pwd
+            ls
             mv serverless.zip serverless/
       - 
         name: "Upload to S3"
         run: |
-            aws s3 sync ./serverless s3://lambda.demo.polepeddiaravind.me/serverless.zip
+            aws s3 sync ./serverless s3://lambda.demo.polepeddiaravind.me
       - 
         name: "Update Lambda function"
         run: |-
